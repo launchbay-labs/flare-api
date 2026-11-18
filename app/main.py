@@ -14,7 +14,7 @@ def healthz() -> dict:
 
 @app.get("/")
 def root() -> dict:
-    return {"service": "flare-api", "message": "Launched with Launchbay"}
+    return {"name": "flare-api", "message": "Launched with Launchbay"}
 
 
 @app.get("/cloud")
